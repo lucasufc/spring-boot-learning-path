@@ -1,5 +1,7 @@
 package br.com.eurudio;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 
@@ -20,6 +22,25 @@ public class PersonServices {
         person.setId(counter.incrementAndGet());
         person.setFirstName("Lucas");
         person.setLastName("Martins");
+        person.setGender("Male");
+
+        return person;
+    }
+
+    public List<Person> findAll(){
+        List<Person> persons = new ArrayList<Person>();
+        for (int i=0; i <8; i++){
+            Person person = mockPerson(i);
+            persons.add(person);
+        }
+        return persons;
+    }
+
+    private Person mockPerson(int i) {
+        Person person = new Person();
+        person.setId(counter.incrementAndGet());
+        person.setFirstName("Firstname " + i);
+        person.setLastName("Lastname "+ i);
         person.setGender("Male");
 
         return person;
