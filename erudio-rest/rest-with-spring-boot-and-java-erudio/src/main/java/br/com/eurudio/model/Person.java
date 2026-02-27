@@ -32,6 +32,11 @@ public class Person implements Serializable{
         return id;
     }
 
+    public void updateFromDto(Person dto) {
+        this.firstName = dto.firstName;
+        this.lastName = dto.lastName;
+        this.gender = dto.gender;
+    }
 
     public void setId(Long id) {
         this.id = id;

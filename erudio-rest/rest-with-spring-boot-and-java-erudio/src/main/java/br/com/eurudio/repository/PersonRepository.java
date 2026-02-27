@@ -1,4 +1,4 @@
-package br.com.eurudio;
+package br.com.eurudio.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
