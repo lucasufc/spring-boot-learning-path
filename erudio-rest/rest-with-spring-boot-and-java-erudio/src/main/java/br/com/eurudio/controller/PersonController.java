@@ -1,4 +1,4 @@
-package br.com.eurudio.controllers;
+package br.com.eurudio.controller;
 
 import java.util.List;
 
@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.eurudio.PersonServices;
 import br.com.eurudio.model.Person;
+import br.com.eurudio.service.PersonService;
 
 @RestController
 @RequestMapping("/person")
 public class PersonController {
 
     @Autowired
-    private PersonServices service;
+    private PersonService service;
     @RequestMapping(value = "/{id}",
         method = RequestMethod.GET, 
         produces = MediaType.APPLICATION_JSON_VALUE

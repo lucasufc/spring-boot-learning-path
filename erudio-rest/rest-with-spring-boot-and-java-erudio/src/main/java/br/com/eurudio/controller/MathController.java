@@ -1,4 +1,4 @@
-package br.com.eurudio.controllers;
+package br.com.eurudio.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

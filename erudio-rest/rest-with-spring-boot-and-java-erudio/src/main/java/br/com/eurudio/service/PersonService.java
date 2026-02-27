@@ -1,4 +1,4 @@
-package br.com.eurudio;
+package br.com.eurudio.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import br.com.eurudio.model.Person;
 
 
 @Service
-public class PersonServices {
+public class PersonService {
     private final AtomicLong counter = new AtomicLong();
-    private Logger logger =  Logger.getLogger(PersonServices.class.getName());
+    private Logger logger =  Logger.getLogger(PersonService.class.getName());
 
     public Person findById(String id){
         logger.info("Finding one Person!");

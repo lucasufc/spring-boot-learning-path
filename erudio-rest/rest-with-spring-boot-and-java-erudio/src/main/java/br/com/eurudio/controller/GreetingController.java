@@ -1,4 +1,4 @@
-package br.com.eurudio.controllers;
+package br.com.eurudio.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
